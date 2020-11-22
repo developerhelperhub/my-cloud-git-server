@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  my-cloud-git-server:
+    image: developerhelperhub/my-cloud-git-server
+    container_name: my-cloud-git-server
+    volumes:
+      - /var/mycloud/volume/git/repos:/var/www/git
+    ports:
+      - '8087:80'
